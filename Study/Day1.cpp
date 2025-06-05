@@ -9,7 +9,7 @@
 using namespace std;
 
 // namespace의 선언
-namespace AAA 
+namespace AAA
 {
     string name;
     void Test()
@@ -17,7 +17,7 @@ namespace AAA
         std::cout << "name : " << name << "\n";
     }
 }
-namespace BBB 
+namespace BBB
 {
     string name;
     void Test()
@@ -33,7 +33,7 @@ int main()
 {
     // std => stadard namspace 안에 있는 cout/cin
     int input;
-    cout << "입력하세요 : "; 
+    cout << "입력하세요 : ";
     std::cin >> input;
     std::cout << "입력하신 숫자는 " << input << "입니다\n";
 
@@ -65,7 +65,7 @@ void main()
     float f_value = 10.5;
 
     cout << "Value의 값은 " << value << " 입니다.\n";
-    cout << "Value의 값은 " << f_value << " 입니다.\n"; 
+    cout << "Value의 값은 " << f_value << " 입니다.\n";
 }*/
 
 /*Day1-example3
@@ -74,7 +74,7 @@ using namespace std;
 
 // C#과 동일한 연산자, 조건문, 반복문
 // 단, 문자열은 switch에 string을 사용할 수 없음
-// 
+//
 // 함수 사용 주의사항
 // c++에서는 아래에 있는 함수는 불러오지 못함
 //      c++은 무조건 위에서 아래로 방향성을 가지고 흐름
@@ -105,7 +105,7 @@ using namespace std;
 
 // C++ 구조체 = 기본적으로 public 접근제한자로 인식
 // C++ 클래스 = 기본적으로 private 접근제한자로 인식
-struct Data 
+struct Data
 {
     // 접근제한자를 한번에 범위로 처리 가능
 public:
@@ -139,7 +139,7 @@ using namespace std;
 
 // C#
 // 구조체(값형식) vs 클래스(참조형식)
-// 
+//
 // C++
 // 구조체 vs 클래스?
 //      => C++은 값형식과 참조형식 둘 다 사용 가능 : 사용자의 설정에 따라 사용
@@ -148,7 +148,7 @@ using namespace std;
 // 일반적으로 사용하는 경우 모두 값형식으로 인식
 // 단,
 // 포인터를 사용하는 경우 참조형식
-// 
+//
 //
 
 void main()
@@ -226,7 +226,7 @@ using namespace std;
 // 메모리 사용을 원하는 경우 할당 => 가비지 컬랙터가 관리
 // C++ 메모리
 // 메모리 사용을 원하는 경우 할당 => 직접 해제 : 가비지컬랙터 X
-// 
+//
 // 변수의 접근 법위와 생존범위 - C++
 // 종류 - 메모리 영역 / 접근 범위 / 생존범위
 // 전역변수 - 데이터영역 / 모든 곳 / 프로그램 시작 ~ 끝
@@ -244,13 +244,13 @@ void Function(int param) {
 
 // 프로그램 시작부터 끝까지 유지되는 변수
 int global = 0; // 전역변수
-class Data 
+class Data
 {
 public:
     static int value; // 정적변수
 };
 
-void main() 
+void main()
 {
     // 사용자의 동적할당 변수
     // 힙 영역에 사용자가 동적 할당
@@ -283,7 +283,7 @@ void main()
 }
 */
 
-/*Day1-example8 : 배열 
+/*Day1-example8 : 배열
 #include <iostream>
 using namespace std;
 
@@ -292,7 +292,7 @@ void main()
     // 스택에 배열을 저장 => 즉, 스택이기에 메모리 크기를 동작 도중 변경 불가능 = 고정적인 크기만 사용 가능
     int array[5]; // 포인터 사용 X = 스택에 배열을 저장
     // 스택으로 사용하기 때문에 사용이 끝나는 경우 자동으로 삭제
-    
+
     // 힙에 포인터를 사용한 배열 저장 => 메모리 크기 동작 도중 변경 가능 = 유동적인 크기 사용 가능
     int* h_array = new int[5];
     delete[] h_array; // 힙에 할당한 배열의 경우 delete[]을 사용하여 배열 전체 삭제 필수
@@ -314,7 +314,7 @@ public:
     {
         name = "무명";
         score = 0;
-        scores = new int[5]; 
+        scores = new int[5];
     }
     Student(string name, int score) {
         this->name = name;
@@ -324,7 +324,7 @@ public:
     // (가상)소멸자 : C++에서는 필수로 구현
     // int와 string 같은 경우에는 소멸자를 이미 포함하고 있으므로 delete student로 소멸
     // 단 scores 배열의 경우 new를 사용하여 제작하였으므로 delete[]를 이용하여 소멸자에서 삭제 구현 필요
-    virtual ~Student() 
+    virtual ~Student()
     {
         cout << "소멸자가 있으며 객체의 삭제 구현" << endl;
         delete[] scores;
@@ -333,7 +333,7 @@ public:
     }
 };
 
-void main() 
+void main()
 {
     // 스택에서의 사용법
     Student s_student;
@@ -346,10 +346,10 @@ void main()
     // or 동일한 표현) student->name = "학생"
     // (*student).score = 100;
     student->score = 100;
-    cout << "Name : " << (*student).name << endl; // 값형식 . 
+    cout << "Name : " << (*student).name << endl; // 값형식 .
     cout << "Score : " << student->score << endl;
 
-    delete student; 
+    delete student;
 
     cout << "==========================================" << endl;
 

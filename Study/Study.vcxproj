@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{31a9d649-3188-4ffd-8c10-3120179893d1}</ProjectGuid>
-    <RootNamespace>study1</RootNamespace>
+    <ProjectGuid>{7c9f3eda-ce09-4603-bff8-5915613cfc2a}</ProjectGuid>
+    <RootNamespace>Study</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>study</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -124,8 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Day1.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="study1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />
