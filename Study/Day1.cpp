@@ -376,7 +376,7 @@ void main()
 
 }*/
 
-/*Day1-example10 : Player클래스*/
+/*Day1-example10 : Player클래스
 #include <iostream>
 #include "Player.h" // Player.h 헤더 파일을 사용하여 Player.h에서 선언한 것을 사용 가능
 using namespace std;
@@ -402,4 +402,4 @@ void main()
     Player* player = new Player(); // player를 선언
     player->Jump();
     player->Attack();
-}
+}*/
