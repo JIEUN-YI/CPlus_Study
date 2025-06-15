@@ -125,15 +125,19 @@
   <ItemGroup>
     <ClInclude Include="framework.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="InputManager.h" />
     <ClInclude Include="RenderManager.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="TimeManager.h" />
     <ClInclude Include="WinAPI_Study.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="RenderManager.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
     <ClCompile Include="WinAPI_Study.cpp" />
   </ItemGroup>
   <ItemGroup>

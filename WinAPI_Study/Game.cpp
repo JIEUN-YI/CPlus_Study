@@ -1,7 +1,5 @@
 #include "Game.h"
 #include "RenderManager.h"
-#include "TimeManager.h"
-#include "InputManager.h"
 
 float startX;
 float startY;

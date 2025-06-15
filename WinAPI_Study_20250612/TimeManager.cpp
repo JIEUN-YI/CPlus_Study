@@ -1,8 +1,9 @@
-/*
 #include "TimeManager.h"
-#include<chrono>;
+#include <chrono>
 #include "InputManager.h"
+
 using namespace std;
+
 void TimeManager::Start()
 {
 	fps = 1;
@@ -20,11 +21,10 @@ void TimeManager::CheckTime()
 {
 	// 이전 프레임에서 현재 프레임까지 걸린 시간을 측정
 	curTime = chrono::high_resolution_clock::now();
-	chrono::duration<float> delta = curTime - prevTime();
+	chrono::duration<float> delta = curTime - prevTime;
 
 	deltaTime = delta.count();
 	fps = 1 / deltaTime;
 
 	prevTime = curTime;
 }
-*/
